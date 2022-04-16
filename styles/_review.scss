@@ -1,0 +1,46 @@
+.wrapper {
+    margin-top: 5rem;
+    @media (min-width: 62em) {
+        margin-top: 15rem;
+    }
+    .review-container {
+        .review {
+            background-color: $colorVaryLightGray;
+            position: relative;
+            padding: 2rem 0;
+            border-radius: 1rem;
+            img {
+                position: absolute;
+                top: -25px;
+                width: 50px;
+                @media (min-width: 62em) {
+                    top: -35px;
+                    width: 75px;
+                }
+            }
+            p {
+                color: $colorDarkGrayishBlue;
+            }
+        }
+        // .review1 {
+        //     @media (min-width: 62em) {
+        //         transform: translate(-45px);
+        //     }
+        // }
+        // .review3 {
+        //     @media (min-width: 62em) {
+        //         transform: translate(45px);
+        //     }
+        // }
+    }
+    .btn {
+        background-color: $colorBrightRed;
+        color: $colorVaryLightGray;
+        font-size: 0.9rem;
+        padding: 0.7rem 1.5rem;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+        &:hover {
+            opacity: 0.7;
+        }
+    }
+}

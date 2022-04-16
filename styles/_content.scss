@@ -1,0 +1,95 @@
+.description {
+    margin-top: 5rem;
+    position: relative;
+    @media (min-width: 62em) {
+         ::before {
+            content: "";
+            width: 600px;
+            height: 850px;
+            position: absolute;
+            left: -25%;
+            bottom: -200%;
+            z-index: -1;
+            background: url(../images/bg-tablet-pattern.svg);
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+    }
+    .description-content {
+        .different-wrapper {
+            @media (min-width: 42em) {
+                width: 70%;
+            }
+            @media (min-width: 62em) {
+                width: 55%;
+            }
+            .different {
+                @media (min-width: 62em) {
+                    width: 80%;
+                }
+            }
+        }
+        .benefits {
+            @media (min-width: 62em) {
+                width: 50%;
+            }
+            .benefit {
+                span {
+                    background-color: $colorBrightRed;
+                    color: $colorVaryLightGray;
+                }
+                h1 {
+                    margin-bottom: 0;
+                    font-size: 1rem;
+                    background-color: hsl(13, 49%, 85%);
+                    width: 100%;
+                    border-top-left-radius: 0.5rem;
+                    border-bottom-left-radius: 0.5rem;
+                    @media (min-width: 62em) {
+                        background-color: transparent;
+                    }
+                }
+                p {
+                    margin: auto auto auto -50px;
+                    @media (min-width: 62em) {
+                        margin: auto;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.subscribe-wrapper {
+    background: url(../images/bg-simplify-section-mobile.svg) hsl(12, 88%, 59%);
+    background-repeat: no-repeat;
+    background-position-y: 10px;
+    background-size: 4em;
+    @media (min-width: 62em) {
+        background: url(../images/bg-simplify-section-desktop.svg) hsl(12, 88%, 59%);
+        background-position-x: 100px;
+        background-position-y: -100px;
+    }
+    .subscribe-content {
+        padding: 5rem 0;
+        @media (min-width: 62em) {
+            padding: 4rem 0;
+        }
+        h1 {
+            color: $colorVaryLightGray;
+            width: 60%;
+            @media (min-width: 62em) {
+                width: 40%;
+            }
+        }
+        button {
+            background-color: $colorVaryLightGray;
+            color: $colorBrightRed;
+            padding: 0.7rem 1.5rem;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+            &:hover {
+                opacity: 0.7;
+            }
+        }
+    }
+}

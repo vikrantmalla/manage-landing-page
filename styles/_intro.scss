@@ -1,0 +1,46 @@
+header {
+    background: url(../images/bg-tablet-pattern.svg);
+    background-repeat: no-repeat;
+    background-position-x: 250px;
+    background-position-y: 310px;
+    background-size: 20em;
+    @media (min-width: 62em) {
+        background-image: none;
+    }
+    .intro-img {
+        @media (min-width: 62em) {
+            width: 50%;
+        }
+    }
+    .intro-content-wrapper {
+        @media (min-width: 62em) {
+            width: 50%;
+        }
+        .intro-content {
+            @media (min-width: 42em) {
+                width: 70%;
+            }
+            button {
+                background-color: $colorBrightRed;
+                color: $colorVaryLightGray;
+                box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+                font-size: 0.9rem;
+                padding: 0.7rem 1.5rem;
+                &:hover {
+                    opacity: 0.7;
+                }
+            }
+        }
+        .intro-heading {
+            @media (min-width: 62em) {
+                width: 60%;
+                padding-right: 150px;
+            }
+        }
+    }
+    @media (min-width: 62em) {
+        .intro-content {
+            flex-direction: row-reverse;
+        }
+    }
+}
