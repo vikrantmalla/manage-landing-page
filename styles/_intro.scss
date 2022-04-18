@@ -4,6 +4,10 @@ header {
     background-position-x: 250px;
     background-position-y: 310px;
     background-size: 20em;
+    @media (min-width: 42em) {
+        background-position-x: 550px;
+        background-position-y: 510px;
+    }
     @media (min-width: 62em) {
         background-image: none;
     }
