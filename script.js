@@ -3,6 +3,12 @@ const hamburgeIcon = document.getElementById('hamburger-icon')
 const navbarNav = document.getElementById('navbarNav')
 const reviewCards = document.getElementsByClassName('review');
 const dots = document.getElementsByClassName('dot');
+const form = document.getElementById('email-form');
+const email = document.getElementById('email');
+const small = form.querySelector('small');
+
+
+// show mobile navigation
 
 let showMenu = false
 
@@ -71,3 +77,41 @@ function showCards(n) {
 }
 
 setInterval(nextCard, 15000);
+
+
+// email validation 
+
+function checkEmail(input) {
+    const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    if (re.test(input.value.trim())) {
+        showSuccess()
+    } else {
+        showError('Please insert a valid email')
+    }
+};
+
+// show Error Message
+function showError(message) {
+    form.classList.add('error')
+    small.innerText = message
+};
+
+// show success
+function showSuccess() {
+    form.className = 'email-form'
+    small.innerText = ''
+    email.value = ''
+};
+
+// email submit
+
+form.addEventListener('submit', function(e) {
+    e.preventDefault();
+
+    if (email.value != '') {
+        checkEmail(email)
+    } else {
+        showError('Email field is empty')
+    }
+
+});

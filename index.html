@@ -97,7 +97,7 @@
     </section>
     <section class="wrapper d-flex flex-column justify-content-center align-items-center">
         <h1 class="text-center mb-5">What they’ve said</h1>
-        <div class="review-container d-flex flex-column flex-lg-row justify-content-center align-items-center justify-content-lg-flex-start  align-items-lg-flex-end gap-4 my-5">
+        <div class="review-container d-flex flex-column flex-lg-row justify-content-center align-items-center gap-4 my-5">
             <div class="review review1">
                 <img src="images/avatar-anisha.png " alt="Anisha" />
                 <h5 class="text-center mb-3">Anisha Li</h5>
@@ -142,11 +142,14 @@
         </div>
     </section>
     <footer class="d-flex flex-column flex-lg-row justify-content-between">
-        <form class="d-flex flex-row justify-content-center align-items-center gap-2 order-lg-3 align-items-lg-start">
-            <input id="email" type="email" placeholder="Updates in your inbox..." class="border-0" />
-            <button class="rounded-pill border-0">
+        <form class="d-flex flex-column justify-content-start align-items-lg-start gap-2 order-lg-3 align-items-lg-start" id="email-form">
+            <div>
+                <input id="email" type="email" placeholder="Updates in your inbox..." class="border-0" />
+                <button class="rounded-pill border-0" type="submit">
                 Go
             </button>
+            </div>
+            <small class="ms-3"></small>
         </form>
         <div class="list1 d-flex flex-row justify-content-around justify-content-lg-between  align-items-start mt-5 order-lg-2 align-items-lg-centre mt-lg-0">
             <ul class="list-group">
