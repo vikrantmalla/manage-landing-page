@@ -26,6 +26,10 @@
   }
 }
 
+.intro nav {
+  margin: 0 4rem;
+}
+
 .intro nav .toggle {
   border: none;
   background: transparent;
@@ -108,6 +112,10 @@ header {
   }
 }
 
+header .intro-content-wrapper p {
+  color: #9095a7;
+}
+
 @media (min-width: 62em) {
   header .intro-content-wrapper {
     width: 50%;
@@ -185,6 +193,10 @@ header .intro-content-wrapper .intro-content button:hover {
   .description .description-content .different-wrapper .different {
     width: 80%;
   }
+  .description .description-content .different-wrapper .different p {
+    padding-right: 8rem;
+    color: #9095a7;
+  }
 }
 
 @media (min-width: 62em) {
@@ -215,6 +227,7 @@ header .intro-content-wrapper .intro-content button:hover {
 
 .description .description-content .benefits .benefit p {
   margin: auto auto auto -50px;
+  color: #9095a7;
 }
 
 @media (min-width: 62em) {
@@ -292,7 +305,6 @@ header .intro-content-wrapper .intro-content button:hover {
   .wrapper .review-container {
     position: relative;
     width: 100%;
-    padding: 40px 0;
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
@@ -317,7 +329,7 @@ header .intro-content-wrapper .intro-content button:hover {
 .wrapper .review-container .review img {
   position: absolute;
   top: -25px;
-  left: 40%;
+  left: 42%;
   width: 50px;
 }
 

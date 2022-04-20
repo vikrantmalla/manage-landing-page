@@ -25,6 +25,10 @@
             }
             .different {
                 @media (min-width: 62em) {
+                    p {
+                        padding-right: 8rem;
+                        color: $colorDarkGrayishBlue;
+                    }
                     width: 80%;
                 }
             }
@@ -51,6 +55,7 @@
                 }
                 p {
                     margin: auto auto auto -50px;
+                    color: $colorDarkGrayishBlue;
                     @media (min-width: 62em) {
                         margin: auto;
                     }

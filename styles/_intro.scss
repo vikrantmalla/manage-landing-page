@@ -17,6 +17,9 @@ header {
         }
     }
     .intro-content-wrapper {
+        p {
+            color: $colorDarkGrayishBlue;
+        }
         @media (min-width: 62em) {
             width: 50%;
         }
